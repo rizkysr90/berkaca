@@ -1,0 +1,234 @@
+; /* font-family: 'Playfair Display', serif; */
+
+/* Base Style */
+* {
+    box-sizing: border-box;
+}
+body {
+    padding-top:89px;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    letter-spacing: 1px;
+}
+h2 {
+    font-family:'Playfair Display', serif;
+}
+h3 {
+    font : italic 1em Helvetica, Arial;
+}
+p {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    font-size: 14px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Styling Navigation */
+.flexbox {
+    display: flex;
+}
+.main-header {
+    
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow:0 1px 4px rgba(0, 0, 0, .4) ;
+    top: 0;
+}
+.berkaca {
+    
+    justify-content:center;
+    margin: 0;
+    font-family: 'Merienda', cursive;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    background-color: #000;
+    
+   
+}
+.berkaca a{
+    color: #fff;
+    text-shadow: rgb(47, 48, 50) 3px 3px, rgb(34, 40, 49) -2px 3px, rgb(27, 38, 64) 2.5px -2px;        
+}
+.navigation {
+    display: none;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.containerr {
+    width: 100%;
+    margin: 0 auto;
+}
+/* Styling Banner */
+.banner {
+    flex-direction: column;
+       justify-content: center;  
+    background: 
+                linear-gradient(rgba(255,255,255),transparent 40%),
+                linear-gradient(to top, #000,transparent 60%),
+                black url(img/berkaca.jpeg) center no-repeat;
+    background-size: cover;
+    height: 20em; /* 20em = 320px */
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    
+    
+}
+/* Additional Nav */
+.slider {       
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000;
+    margin-bottom: 3px;    
+}
+.clk2 {
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.click {
+    background: black;
+    color:white;
+    padding: 5px 0;
+    flex-grow: 3; 
+    flex-basis: 100%;
+}
+a.click:hover{
+    background-color:white;
+    color: black;
+}
+a.click:active{
+    background-color: white;
+    color: black;
+}
+/*Main - Content */
+
+
+.canvas {
+    margin-top: 10px;
+    border-top: 1px solid rgba(0,0,0,.4);
+    padding-top: 10px;
+}
+.canvas-image-content {
+    color: white;
+    text-align: center;
+    height:20em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.canvas-main-content{
+    height: 12em;
+    padding: 10px 15px 5px 15px;
+    overflow: hidden;
+  
+}
+.title-content {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px
+}
+
+/* Next Page */
+.next-page {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 4px solid black
+    
+}
+.nextpage-button {
+    width: 50px;
+    height: 50px;
+}
+.text-footer {
+    padding-top: 15px;
+}
+
+/* Footer */
+
+
+/* Additional POST IMAGE LINK */
+.image-post1 {
+    background: linear-gradient(rgba(255,255,255),transparent 40%),
+                linear-gradient(to top, #fff,transparent 20%),
+                black url(img/kampus.jpg) center no-repeat;
+    background-size: cover;            
+}
+
+.image-post2 {
+    background: linear-gradient(rgba(255,255,255),transparent 40%),
+                linear-gradient(to top, #fff,transparent 20%),
+                black url(img/masadepan.jpg) center no-repeat;
+    background-size: cover;            
+}
+.image-post3 {
+    background: linear-gradient(rgba(255,255,255),transparent 40%),
+                linear-gradient(to top, #fff,transparent 20%),
+                black url(img/comsci.jpg) center no-repeat;
+    background-size: cover;     
+}
+/* Media Feature */ 
+@media (min-width: 700px),
+        (min-width: 500px ) and (orientation : landscape ) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       
+       
+    }
+    .canvas {
+        border: none;
+        flex-basis: 300px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        flex-grow: 2;
+    }
+    .canvas2 {
+        align-self: flex-start;
+    }
+    .canvas-image-content {
+        height: 15em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        height: 30em;
+    }
+
+}
+
+
+  
+  
