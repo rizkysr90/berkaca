@@ -89,7 +89,7 @@ img {
     background: 
                 linear-gradient(rgba(255,255,255),transparent 40%),
                 linear-gradient(to top, #000,transparent 60%),
-                black url(img/berkaca.jpeg) center no-repeat;
+                black url(Img/berkaca.jpeg) center no-repeat;
     background-size: cover;
     height: 20em; /* 20em = 320px */
     text-align: center;
@@ -179,20 +179,20 @@ a.click:active{
 .image-post1 {
     background: linear-gradient(rgba(255,255,255),transparent 40%),
                 linear-gradient(to top, #fff,transparent 20%),
-                black url(img/kampus.jpg) center no-repeat;
+                black url(Img/kampus.jpg) center no-repeat;
     background-size: cover;            
 }
 
 .image-post2 {
     background: linear-gradient(rgba(255,255,255),transparent 40%),
                 linear-gradient(to top, #fff,transparent 20%),
-                black url(img/masadepan.jpg) center no-repeat;
+                black url(Img/masadepan.jpg) center no-repeat;
     background-size: cover;            
 }
 .image-post3 {
     background: linear-gradient(rgba(255,255,255),transparent 40%),
                 linear-gradient(to top, #fff,transparent 20%),
-                black url(img/comsci.jpg) center no-repeat;
+                black url(Img/comsci.jpg) center no-repeat;
     background-size: cover;     
 }
 /* Media Feature */ 
