@@ -176,6 +176,10 @@ a[target = "_blank"]{
     text-align: center;
 }
 
+input:focus {
+    border: 2px solid #1B1B1B
+}
+
 
 /* Media */
 @media (min-width: 599px) {
