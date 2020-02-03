@@ -85,7 +85,7 @@ img {
 /* Styling Banner */
 .banner {
     flex-direction: column;
-       justify-content: center;  
+    justify-content: center;  
     background: 
                 linear-gradient(rgba(255,255,255),transparent 40%),
                 linear-gradient(to top, #000,transparent 60%),
