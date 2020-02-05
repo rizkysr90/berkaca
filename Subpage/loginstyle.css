@@ -79,10 +79,7 @@ img {
     border: 2px solid #000;
     margin-bottom: 3px;    
 }
-.clk2 {
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
-}
+
 .click {
     background: black;
     color:white;
@@ -90,12 +87,10 @@ img {
     flex-grow: 3; 
     flex-basis: 100%;
 }
-a.click:hover{
+a.click:hover,
+a.clock:active
+{
     background-color:white;
-    color: black;
-}
-a.click:active{
-    background-color: white;
     color: black;
 }
 /* Form Content */
@@ -177,13 +172,27 @@ a[target = "_blank"]{
 }
 
 input:focus {
-    border: 2px solid #1B1B1B
+    background-color:#1B1B1B;
+    color: white;
+}
+
+input[type ="submit"]:focus {
+    background-color: tomato;
 }
 
 :target {
     background-color:white;
     color: black;
 }
+input:not(#login-submit) {
+    padding: 5px;
+    font-size: 1em;
+}
+
+form > a:hover {
+    color: gray;
+}
+
 
 
 /* Media */

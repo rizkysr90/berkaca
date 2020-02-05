@@ -12,6 +12,7 @@ body {
     text-align: left;
 }
 
+
 h1,h2,h3 {
     margin: 0;
     letter-spacing: 1px;
@@ -69,10 +70,6 @@ img {
     color: #fff;
     text-shadow: rgb(47, 48, 50) 3px 3px, rgb(34, 40, 49) -2px 3px, rgb(27, 38, 64) 2.5px -2px;        
 }
-.navigation {
-    display: none;
-}
-
 .container {
     width: 95%;
     margin: 0 auto;
@@ -82,23 +79,6 @@ img {
     width: 100%;
     margin: 0 auto;
 }
-/* Styling Banner */
-.banner {
-    flex-direction: column;
-    justify-content: center;  
-    background: 
-                linear-gradient(rgba(255,255,255),transparent 40%),
-                linear-gradient(to top, #000,transparent 60%),
-                black url(Img/berkaca.jpeg) center no-repeat;
-    background-size: cover;
-    height: 20em; /* 20em = 320px */
-    text-align: center;
-    color: white;
-    margin-bottom: 30px;
-    
-    
-}
-/* Additional Nav */
 .slider {       
     text-align: center;
     display: flex;
@@ -117,6 +97,7 @@ img {
     flex-grow: 3; 
     flex-basis: 100%;
 }
+
 a.click:hover{
     background-color:white;
     color: black;
@@ -125,9 +106,21 @@ a.click:active{
     background-color: white;
     color: black;
 }
+/* Styling Banner */
+.banner {
+    flex-direction: column;
+    justify-content: center;  
+    background: 
+                linear-gradient(rgba(255,255,255),transparent 40%),
+                linear-gradient(to top, #000,transparent 60%),
+                black url(Img/berkaca.jpeg) center no-repeat;
+    background-size: cover;
+    height: 20em; /* 20em = 320px */
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
 /*Main - Content */
-
-
 .canvas {
     margin-top: 10px;
     border-top: 1px solid rgba(0,0,0,.4);
@@ -154,7 +147,7 @@ a.click:active{
     font-size: 18px
 }
 
-/* Next Page */
+/* Footer */
 .next-page {
     justify-content: space-between;
     width: 100%;
@@ -175,7 +168,7 @@ a.click:active{
 /* Footer */
 
 
-/* Additional POST IMAGE LINK */
+/* POST IMAGE CONTENT style */
 .image-post1 {
     background: linear-gradient(rgba(255,255,255),transparent 40%),
                 linear-gradient(to top, #fff,transparent 20%),
@@ -194,6 +187,12 @@ a.click:active{
                 linear-gradient(to top, #fff,transparent 20%),
                 black url(Img/comsci.jpg) center no-repeat;
     background-size: cover;     
+}
+
+/* Pseudo Element */
+:target{
+    background-color:white;
+    color: black;
 }
 /* Media Feature */ 
 @media (min-width: 700px),
